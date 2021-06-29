@@ -1,0 +1,95 @@
+.container-footer {
+    display:flex;
+    background-color: #141414;
+    flex-direction: column;
+    width: 100%;
+   
+    // padding-left: 160px; 
+    // padding: 10px 20px 10px 20px;
+    // padding-right: 200px;
+    // padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+
+    .container-inner {
+        max-width: 900px;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+    
+
+}
+
+
+.icons-footer {
+    font-size:30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -14px;
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    i {
+        margin: 10px 15px;
+    }
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.links-footer {
+    margin-top:-1px;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0px;
+
+    a {
+
+        width: 25%;
+        font-size: 13px;
+        text-decoration: none;
+        color: gray;
+        margin: 0px 0px 15px 0px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+//  Media query -> max width para pegar tela menor e vai diminuir o width 35% ultimo css 
+.button-footer {
+    background-color: #141414;
+    border: 1px solid gray;
+    color: gray;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px 8px;
+    text-decoration: none;  
+}
+
+a:hover {
+    color: white;
+}
+
+.copy-footer{
+    color: gray;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 799px) {
+    .links-footer a{
+        width: 50%;
+       }
+   }
