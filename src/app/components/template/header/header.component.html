@@ -3,10 +3,26 @@
     <a href="#">
         <img src="assets/img/netflixx.png" width="90px" alt="logo">
     </a>
-    <div id="menu">
-        <a class="menu-trigger">Navegação <i class="fa fa-angle-down" style="color:white;"></i></a>
+    
+
+    <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Navegar</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Início</button>
+              <button ngbDropdownItem>Séries</button>
+              <button ngbDropdownItem>Filmes</button>
+              <button ngbDropdownItem>Bombando</button>
+              <button ngbDropdownItem>Minha lista</button>
+            </div>
+          </div>
+        </div>
     </div>
+    
+
     <ul id="nav">
+
         <!-- <li class="menu-navegation">
         </li> -->
         <li class="lista" [class]="{'active': menu == 'home'}">
@@ -36,7 +52,6 @@
             <img src="assets/img/gatinho.png" alt="icone">
         </a>
     </div>
-  
     
 </nav>
    

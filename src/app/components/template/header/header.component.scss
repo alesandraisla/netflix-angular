@@ -28,6 +28,7 @@ ul {
     .lista {
         color: #fff;
         list-style: none;
+        margin-top:16px;
     }
 
     .active a{
@@ -67,10 +68,24 @@ ul {
     padding: 16px 0;
 }
 
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-top: 6px;
+
+}
+
+.btn-outline-primary {
+    color: #fff !important;
+    border-color: transparent !important;
+}
+
+
 @media (min-width: 885px) {
-    div .menu-trigger {
-        display: none;
-    }
+ .row, .cow, .d-inline-block, .btn, .btn-outline-primar {
+     display: none;
+ }
  
    
 }
