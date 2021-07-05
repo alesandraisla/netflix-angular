@@ -1,0 +1,37 @@
+<div class="container-menu">
+    <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Navegar</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style=" background-color: black !important;">
+              <button ngbDropdownItem class="button-caixa" style=" border-top: 2px solid white;" >Início</button>
+              <button ngbDropdownItem class="button-caixa" >Séries</button>
+              <button ngbDropdownItem class="button-caixa" >Filmes</button>
+              <button ngbDropdownItem class="button-caixa" >Bombando</button>
+              <button ngbDropdownItem class="button-caixa" >Minha lista</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <ul id="nav">
+    
+        <!-- <li class="menu-navegation">
+        </li> -->
+        <li class="lista" [class]="{'active': menu == 'home'}">
+            <a href="#" (click)="selecioneMenu('home')">Início</a>
+        </li>
+        <li class="lista" [class]="{'active': menu == 'series'}" >
+            <a href="#" (click)="selecioneMenu('series')">Séries</a>
+        </li>
+        <li class="lista" [class]="{'active': menu == 'filmes'}">
+            <a href="#" (click)="selecioneMenu('filmes')">Filmes</a>
+        </li>
+        <li class="lista" [class]="{'active': menu == 'bombando'}">
+            <a href="#" (click)="selecioneMenu('bombando')">Bombando</a>
+        </li>
+        <li class="lista" [class]="{'active': menu == 'lista'}">
+            <a href="#" (click)="selecioneMenu('lista')">Minha lista</a>
+        </li>
+    </ul>
+</div>
+

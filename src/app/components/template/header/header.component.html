@@ -1,69 +1,15 @@
 
 <nav  class="flex-container">
-    <a href="#">
-        <img src="assets/img/netflixx.png" width="90px" style="margin-left: 20px;" alt="logo">
-    </a>
-    
-
-    <div class="row">
-        <div class="col">
-          <div ngbDropdown class="d-inline-block">
-            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Navegar</button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style=" background-color: black !important;">
-              <button ngbDropdownItem class="button-caixa" style=" border-top: 2px solid white;" >Início</button>
-              <button ngbDropdownItem class="button-caixa" >Séries</button>
-              <button ngbDropdownItem class="button-caixa" >Filmes</button>
-              <button ngbDropdownItem class="button-caixa" >Bombando</button>
-              <button ngbDropdownItem class="button-caixa" >Minha lista</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-
-    <ul id="nav">
-
-        <!-- <li class="menu-navegation">
-        </li> -->
-        <li class="lista" [class]="{'active': menu == 'home'}">
-            <a href="#" (click)="selecioneMenu('home')">Início</a>
-        </li>
-        <li class="lista" [class]="{'active': menu == 'series'}" >
-            <a href="#" (click)="selecioneMenu('series')">Séries</a>
-        </li>
-        <li class="lista" [class]="{'active': menu == 'filmes'}">
-            <a href="#" (click)="selecioneMenu('filmes')">Filmes</a>
-        </li>
-        <li class="lista" [class]="{'active': menu == 'bombando'}">
-            <a href="#" (click)="selecioneMenu('bombando')">Bombando</a>
-        </li>
-        <li class="lista" [class]="{'active': menu == 'lista'}">
-            <a href="#" (click)="selecioneMenu('lista')">Minha lista</a>
-        </li>
-    </ul>
-    <div class="secondary-navigation">
-        <a href="#" >
-            <i class="fa fa-search" style="color: white;"></i>
-        </a>
-        <a href="#" >
-            <i class="fa fa-bell" style="color:white;"></i>
-        </a>
+    <div class="header-logo">
         <a href="#">
-            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+            <img src="assets/img/netflixx.png" width="90px" style="margin-left: 20px;" alt="logo">
         </a>
     </div>
-    <!-- <div id="dropdown-image" class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
-        <button class="btn" ngbDropdownToggle><img src="assets/img/gatinho.png" style="margin-right: 20px; color:blueviolet;" alt="icone"></button>
-        <div class="dropdown-menu" ngbDropdownMenu>
-          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
-            One</button>
-          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
-            Two</button>
-          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
-            Four!</button>
-            <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
-                Four!</button>
-        </div>
-      </div> -->
+    <div class="header-menu">
+        <app-menu></app-menu>
+    </div>
+    <div class="header-actions">
+        <app-menu-action></app-menu-action>
+    </div>
 </nav>
    

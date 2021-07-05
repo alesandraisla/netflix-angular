@@ -1,0 +1,35 @@
+<div class="container-action">
+    <div class="navigation-action">
+        <a href="#" >
+            <i class="fa fa-search" style="color: white;"></i>
+        </a>
+        <a href="#" >
+            <i class="fa fa-bell" style="color:white;"></i>
+        </a>
+        <!-- <a href="#">
+            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+        </a> -->
+    </div>
+    <div class="button-action">
+        <button #button (click)="toogleTag()" id="button" aria-describedby="tooltip"> <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone"></button>
+        <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip">
+          <div *ngFor="let user of users" class="list-button-action">
+            <a><img [src]="user.img" style="width:32px;" alt=icone>{{ user.name }}</a>
+          </div>
+          <div #arrow id="arrow" data-popper-arrow></div>
+        </div>
+    </div>
+    <!-- <div id="dropdown-image" class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+        <button class="btn" ngbDropdownToggle><img src="assets/img/gatinho.png" style="margin-right: 20px; color:blueviolet;" alt="icone"></button>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+            One</button>
+          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+            Two</button>
+          <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+            Four!</button>
+            <button ngbDropdownItem class="button-box-img">            <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+                Four!</button>
+        </div>
+      </div> -->
+</div>

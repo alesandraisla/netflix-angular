@@ -1,0 +1,8 @@
+#tooltip {
+    opacity: 0; //esconder o elemento
+    visibility: hidden;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

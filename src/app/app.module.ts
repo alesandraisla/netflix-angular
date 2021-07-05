@@ -7,13 +7,17 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MenuComponent } from './components/template/header/menu/menu.component';
+import { MenuActionComponent } from './components/template/header/menu-action/menu-action.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    MenuComponent,
+    MenuActionComponent
   ],
   imports: [
     BrowserModule,
