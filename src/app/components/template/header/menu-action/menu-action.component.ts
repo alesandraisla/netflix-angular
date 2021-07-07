@@ -18,11 +18,11 @@ export class MenuActionComponent implements OnInit, AfterViewInit {
   users = [
     {
       img: 'assets/img/tigre.png',
-      name: 'Isla'
+      name: 'Lara Croft'
     },
     {
       img: 'assets/img/boneco.png',
-      name: 'Pedro Silva'
+      name: 'Ichigo Kurosaki'
     },
     {
       img: 'assets/img/boneca.png',
@@ -31,7 +31,7 @@ export class MenuActionComponent implements OnInit, AfterViewInit {
     {
       img: 'assets/img/smile.png',
       name: 'Naruto Uzumaki'
-    }
+    },
   ]
 
   

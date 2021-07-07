@@ -11,12 +11,32 @@
         </a> -->
     </div>
     <div class="button-action">
-        <button #button (click)="toogleTag()" id="button" aria-describedby="tooltip"> <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone"></button>
+        <button #button (click)="toogleTag()" id="button" aria-describedby="tooltip"> 
+          <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+        </button>
         <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip">
-          <div *ngFor="let user of users" class="list-button-action">
-            <a><img [src]="user.img" style="width:32px;" alt=icone>{{ user.name }}</a>
-          </div>
-          <div #arrow id="arrow" data-popper-arrow></div>
+            <div *ngFor="let user of users" class="list-button-action">
+              <a>
+                <img [src]="user.img" style="width:32px;" alt=icone>
+                {{ user.name }}
+              </a>
+            </div>
+            <div class="menu-action-item">
+                <a>Gerenciar perfis</a>
+            </div>
+            <div class="border-action-item">
+            </div>
+            <div class="menu-itens">
+                <a>Conta</a> 
+            </div>
+            <div class="menu-itens">
+                <a>Centro de ajuda</a> 
+            </div>
+            <div>
+                <a>Sair da Netflix</a>            
+            </div>
+            <hr>
+            <div #arrow id="arrow" data-popper-arrow></div>
         </div>
     </div>
     <!-- <div id="dropdown-image" class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
