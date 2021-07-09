@@ -18,19 +18,19 @@
         <!-- <li class="menu-navegation">
         </li> -->
         <li class="lista" [class]="{'active': menu == 'home'}">
-            <a href="#" (click)="selecioneMenu('home')">Início</a>
+            <a [routerLink]="['/home']" (click)="selecioneMenu('home')">Início</a>
         </li>
         <li class="lista" [class]="{'active': menu == 'series'}" >
-            <a href="#" (click)="selecioneMenu('series')">Séries</a>
+            <a [routerLink]="['/series']" (click)="selecioneMenu('series')">Séries</a>
         </li>
         <li class="lista" [class]="{'active': menu == 'filmes'}">
-            <a href="#" (click)="selecioneMenu('filmes')">Filmes</a>
+            <a [routerLink]="['/filmes']" (click)="selecioneMenu('filmes')">Filmes</a>
         </li>
         <li class="lista" [class]="{'active': menu == 'bombando'}">
-            <a href="#" (click)="selecioneMenu('bombando')">Bombando</a>
+            <a [routerLink]="['/bombando']" (click)="selecioneMenu('bombando')">Bombando</a>
         </li>
         <li class="lista" [class]="{'active': menu == 'lista'}">
-            <a href="#" (click)="selecioneMenu('lista')">Minha lista</a>
+            <a [routerLink]="['/navegando']"(click)="selecioneMenu('lista')">Minha lista</a>
         </li>
     </ul>
 </div>

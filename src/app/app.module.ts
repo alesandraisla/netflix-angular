@@ -9,6 +9,10 @@ import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './components/template/header/menu/menu.component';
 import { MenuActionComponent } from './components/template/header/menu-action/menu-action.component';
+import { SeriesComponent } from './components/series/series.component';
+import { FilmComponent } from './components/film/film.component';
+import { LatestComponent } from './components/latest/latest.component';
+import { NavigationTabComponent } from './components/navigation-tab/navigation-tab.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { MenuActionComponent } from './components/template/header/menu-action/me
     FooterComponent,
     HomeComponent,
     MenuComponent,
-    MenuActionComponent
+    MenuActionComponent,
+    SeriesComponent,
+    FilmComponent,
+    LatestComponent,
+    NavigationTabComponent
   ],
   imports: [
     BrowserModule,
