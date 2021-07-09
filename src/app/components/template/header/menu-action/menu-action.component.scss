@@ -11,6 +11,7 @@
 
 .container-action {
     display: flex;
+    width: 100%;
 }
 
 .button-action{
@@ -18,7 +19,7 @@
     // position: relative;
     border-radius: 0;
     // background-color: transparent;
-    background-color: red;
+    background-color: black;
     border: none;
     margin-top: 10px;
     margin-right:10px;
@@ -185,11 +186,12 @@
   }
 
   .list-button-action {
-    padding: 5px 10px;
+    padding: 5px 10px 5px 5px;
     width: 160px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: normal;
 
     img {
       margin-right: 10px;
@@ -258,6 +260,8 @@
 
 .menu-action-item {
   margin-top: 20px;
+  padding: 5px 10px 5px 5px;
+  font-weight: normal;
 }
 
 .border-action-item {
@@ -266,8 +270,10 @@
 }
 
 
-.menu-itens {
+ul .menu-itens {
   padding-bottom: 5px;
+  list-style: none;
+  padding: 5px 10px 5px 5px;
 }
 
 // Responsividade  
@@ -276,6 +282,10 @@
 @media (min-width: 885px) {
  .row, .cow, .d-inline-block, .btn, .btn-outline-primar {
      display: none;
+
+  .container-action {
+    width: 100%;
+  }   
  }
  
    
