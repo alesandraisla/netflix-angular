@@ -16,13 +16,13 @@
         </button>
         <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip">
             <div *ngFor="let user of users" class="list-button-action">
-              <a>
+              <a [routerLink]="['/home']">
                 <img [src]="user.img" style="width:32px;" alt=icone>
                 {{ user.name }}
               </a>
             </div>
             <div class="menu-action-item">
-                <a>Gerenciar perfis</a>
+                <a [routerLink]="['/profile/manage']">Gerenciar perfis</a>
             </div>
             <div class="border-action-item">
             <div class="border-action-item"></div>

@@ -9,7 +9,7 @@ import { Component, OnInit, AfterViewInit,ViewChild, ElementRef } from '@angular
 
 
 export class MenuComponent implements OnInit, AfterViewInit {
-  menu = 'home';
+  menu = 'browse';
 
   constructor() { }
   
@@ -22,13 +22,9 @@ export class MenuComponent implements OnInit, AfterViewInit {
   }
 
   selecioneMenu(m:string): void {
-    console.log(m)
+    // console.log(m)
     this.menu = m;
 
   } 
-
-
-
-
 
 }

@@ -13,6 +13,7 @@ import { SeriesComponent } from './components/series/series.component';
 import { FilmComponent } from './components/film/film.component';
 import { LatestComponent } from './components/latest/latest.component';
 import { NavigationTabComponent } from './components/navigation-tab/navigation-tab.component';
+import { ManageComponent } from './components/profiles/manage/manage.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NavigationTabComponent } from './components/navigation-tab/navigation-t
     SeriesComponent,
     FilmComponent,
     LatestComponent,
-    NavigationTabComponent
+    NavigationTabComponent,
+    ManageComponent
   ],
   imports: [
     BrowserModule,

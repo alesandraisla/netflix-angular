@@ -24,6 +24,10 @@ ul {
         color: white;
         font-weight: 500;
     }
+    .active-link {
+        color: white;
+        font-weight: 500;
+    }
 }
 
 .container-menu {
@@ -88,6 +92,16 @@ ul {
     margin-top: 5px;
 }
 
+.first-of-list {
+    border-top: 2px solid white;
+    background-color: black !important;
+    color: white !important;
+    text-align: center;
+}
+
+.dropdown-list {
+    background-color: black !important;
+}
 
 .dropdown-item {
     display: block;
@@ -96,7 +110,7 @@ ul {
     clear: both;
     font-weight: 400;
     color: #212529;
-    text-align: inherit;
+    // text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
     border: 0;
