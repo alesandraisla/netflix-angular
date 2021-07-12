@@ -8,37 +8,27 @@ import { createPopper } from '@popperjs/core';
   styleUrls: ['./home.component.scss']
 })
 
-// export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
-export class HomeComponent {
+  showVideo: boolean = false;
+ 
 
-  // @ViewChild('button')
-  // button!: ElementRef;
-  // @ViewChild('tooltip') 
-  // tooltip!: ElementRef;
-  constructor() { }
+  @ViewChild('homeVideo') 
+  homeVideo!: ElementRef;
+   constructor() { }
 
-  //Toogle elemento show and hide
-  // showMe: boolean = false;
+  ngAfterViewInit(): void {
+    let video = this.homeVideo.nativeElement;
+    video.src = 'assets/video/trailer.mp4';
+    video.load();
 
-  // toogleTag() {
-  //   this.showMe =!this.showMe;
-  // }
+    video.addEventListener('loadeddata', () =>  {
+      console.log("te odeio")
+      video.play();
+      this.showVideo = true;
+    }, false);
+  }
 
   ngOnInit(): void {
   }
-
-
-  // ngAfterViewInit(): void {
-  //   const popperInstance = createPopper(this.button.nativeElement, this.tooltip.nativeElement, {
-  //     modifiers: [
-  //       {
-  //         name: 'offset',
-  //         options: {
-  //           offset: [0, 8],
-  //         },
-  //       },
-  //     ],
-  //   });
-  // }
 }

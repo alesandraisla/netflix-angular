@@ -34,19 +34,13 @@ export class MenuActionComponent implements OnInit, AfterViewInit {
     },
   ]
 
-  
-
-
-
   constructor() { }
-
-
 
   //Toogle elemento show and hide
   showMe: boolean = false;
 
   toogleTag() {
-    this.showMe =!this.showMe;
+    this.showMe = !this.showMe;
   }
 
   ngOnInit(): void {
