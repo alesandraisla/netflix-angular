@@ -14,6 +14,8 @@ import { FilmComponent } from './components/film/film.component';
 import { LatestComponent } from './components/latest/latest.component';
 import { NavigationTabComponent } from './components/navigation-tab/navigation-tab.component';
 import { ManageComponent } from './components/profiles/manage/manage.component';
+import { ProfileLayoutComponent } from './template/profile-layout/profile-layout.component';
+import { HomeLayoutComponent } from './template/home-layout/home-layout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ManageComponent } from './components/profiles/manage/manage.component';
     FilmComponent,
     LatestComponent,
     NavigationTabComponent,
-    ManageComponent
+    ManageComponent,
+    ProfileLayoutComponent,
+    HomeLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+import { ProfileLayoutComponent } from './template/profile-layout/profile-layout.component';
+import { HomeLayoutComponent } from './template/home-layout/home-layout.component';
 import { LatestComponent } from './components/latest/latest.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -8,12 +10,49 @@ import { NavigationTabComponent } from './components/navigation-tab/navigation-t
 import { ManageComponent } from './components/profiles/manage/manage.component';
 
 const routes: Routes = [
-  {path: "browse", component: HomeComponent}, 
-  {path: "series", component: SeriesComponent},
-  {path: "films", component: FilmComponent},
-  {path: "latest", component: LatestComponent},
-  {path: "myList", component: NavigationTabComponent},
-  {path: "profile/manage", component: ManageComponent}
+  // {path: "browse", component: HomeComponent}, 
+  // {path: "series", component: SeriesComponent},
+  // {path: "films", component: FilmComponent},
+  // {path: "latest", component: LatestComponent},
+  // {path: "myList", component: NavigationTabComponent},
+  // {path: "profile/manage", component: ManageComponent}
+  {
+    path: '',
+    component: HomeLayoutComponent,
+    children: [
+      {
+        path: 'browse',
+        component: HomeComponent
+      },
+      {
+        path: 'series',
+        component: SeriesComponent
+      },
+      {
+        path: 'films',
+        component: FilmComponent
+      },
+      {
+        path: 'latest',
+        component: LatestComponent
+      },
+      {
+        path: 'myList',
+        component: NavigationTabComponent
+      }
+    ]
+  },
+  {
+    path: '',
+    component: ProfileLayoutComponent,
+    children: [
+      {
+        path: 'profile/manage',
+        component: ManageComponent
+      }
+    ]
+  },
+  { path: '**', redirectTo: 'profile/manage' }
 ];
 
 @NgModule({

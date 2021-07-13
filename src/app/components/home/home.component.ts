@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     video.load();
 
     video.addEventListener('loadeddata', () =>  {
-      console.log("te odeio")
       video.play();
       this.showVideo = true;
     }, false);
