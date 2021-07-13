@@ -1,1 +1,16 @@
-<p>manage works!</p>
+<div class="profiles">
+    <div class="font-profiles">Gerenciar perfis:</div>
+
+    <ul>
+        <li>
+            <div *ngFor="let user of users" class="profiles-links">
+                <a>
+                    <img [src]="user.img"  class="img-profiles">
+                    <span> Ichigo Kurosaki</span>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
