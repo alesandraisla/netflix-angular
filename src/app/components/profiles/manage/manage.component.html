@@ -1,16 +1,20 @@
 <div class="profiles">
+    <a href="#">
+        <img src="assets/img/netflixx.png" class="img-home"alt="logo">
+    </a>
     <div class="font-profiles">Gerenciar perfis:</div>
-
     <ul>
         <li>
             <div *ngFor="let user of users" class="profiles-links">
-                <a>
+                <a href="#">
                     <img [src]="user.img"  class="img-profiles">
-                    <span> Ichigo Kurosaki</span>
+                    <div class="name-profiles">
+                        {{ user.name }}
+                    </div>
+                    <!-- <span [src]="user.name"></span> -->
                 </a>
             </div>
         </li>
     </ul>
-
 </div>
 
