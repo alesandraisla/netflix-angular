@@ -13,7 +13,7 @@
         </button>
         <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip">
             <div *ngFor="let user of users" class="list-button-action">
-              <a [routerLink]="['/home']">
+              <a [routerLink]="['/browse']">
                 <img [src]="user.img" style="width:32px;" alt=icone>
                 {{ user.name }}
               </a>
