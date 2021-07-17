@@ -31,7 +31,7 @@ import { HomeLayoutComponent } from './template/home-layout/home-layout.componen
     NavigationTabComponent,
     ManageComponent,
     ProfileLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
   ],
   imports: [
     BrowserModule,

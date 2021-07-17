@@ -1,15 +1,16 @@
 <div class="container-action">
     <div class="navigation-action">
         <a href="#" >
-            <i class="fa fa-search" style="color: white;"></i>
+            <i class="fa fa-search"></i>
         </a>
         <a href="#" >
-            <i class="fa fa-bell" style="color:white;"></i>
+            <i class="fa fa-bell"></i>
         </a>
     </div>
     <div class="button-action">
         <button #button (click)="toogleTag()" id="button" aria-describedby="tooltip"> 
-          <img src="assets/img/gatinho.png" style="margin-right: 20px;" alt="icone">
+          <img src="assets/img/gatinho.png" alt="icone">
+          <i class="fa fa-caret-down"></i>
         </button>
         <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip">
             <div *ngFor="let user of users" class="list-button-action">
@@ -23,7 +24,7 @@
             </div>
             <div class="border-action-item">
             <div class="border-action-item"></div>
-              <ul style="padding-left: 0px;">
+              <ul class="menus">
                 <li class="menu-itens">
                   <a href="#">Conta</a>
                 </li>
