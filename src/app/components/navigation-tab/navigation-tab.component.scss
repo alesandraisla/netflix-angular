@@ -1,6 +1,6 @@
 .container-list {
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
@@ -8,36 +8,35 @@
 }
 
 
+.title{
+    margin-left: 60px;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 3.5%;
+    display: block;
+    margin-bottom: 80px;
+}
+
+
 .card-list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 25px;
+    margin-left: 60px;
 }
 
 .card-item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: 5px;
-    margin-bottom: 50px;
-    // margin-left: 1px;
-    // margin-right: 10px;
+    margin-right: 3.5px;
+    margin-bottom: 80px;
     justify-content: center;
     align-items: center;
     cursor: pointer
 }
 
 img {
-    width: 300px;
+    width: 293px;
     border-radius: 5px;
-}
-
-.title{
-    margin-left: 25px;
-    font-size: 2.5rem;
-    color: white;
-    margin-top: 60px;
-    display: block;
-    margin-bottom: 50px;
 }
