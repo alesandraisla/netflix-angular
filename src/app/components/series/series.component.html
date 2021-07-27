@@ -1,1 +1,25 @@
-<p>series works!</p>
+<div class=" ">
+    <div>
+        <img id="imgTrailer" [ngClass]="{hidden: showVideo == true}" src="assets/img/trailer.jpg" alt="trailer">
+        <video id="serieVideo" [ngClass]="{hidden: showVideo == false}" #serieVideo style="width: 100%;">
+        </video>
+    </div>
+    <div class="text-serie">
+        <span>Séries</span>
+        <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()" > 
+            Gêneros
+            <i class="fa fa-caret-down"></i>
+            <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila"  >
+            <ul *ngFor="let grupo of getGrupos()" >
+                <li *ngFor="let i of grupo" >
+                    <a> {{ i }}</a>
+                </li>    
+            </ul>
+            </div>
+        </div>
+        <div></div>
+        <div class="button-series-white"><a href="#"><i class="fa fa-play"></i>Assistir</a></div>
+        <div class="button-series-dark"><a href="#"><i class="fa fa-info-circle"></i>Mais informações</a></div>
+ 
+    </div>
+  
