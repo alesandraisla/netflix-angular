@@ -1,1 +1,31 @@
-<p>film works!</p>
+<div class=" ">
+    <div>
+        <img id="imgTrailer" [ngClass]="{hidden: showVideo == true}" src="assets/img/trailer.jpg" alt="trailer">
+        <video id="filmVideo" [ngClass]="{hidden: showVideo == false}" #filmVideo style="width: 100%;">
+        </video>
+    </div>
+    <div class="text-film">
+            <span>Filmes</span>
+            <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()" > 
+                Gêneros
+                <i class="fa fa-caret-down"></i>
+                <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila"  >
+                <ul *ngFor="let grupo of getGrupos()" >
+                    <li *ngFor="let i of grupo" >
+                        <a> {{ i }}</a>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+        <div class="button-film-white">
+            <a href="#"><i class="fa fa-play"></i>Assistir</a>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/650x260/ffffff/B0C4DE/?text=Filme" title="Nome de algum filme">
+        </div>
+        <div class="button-film-dark">
+            <a href="#"><i class="fa fa-info-circle"></i>Mais informações</a>
+        </div>
+ 
+    </div>
+  

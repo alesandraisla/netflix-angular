@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit,ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,7 @@ export class HeaderComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit(): void {
+
     window.addEventListener('scroll', () => {
       console.log(window.scrollY > 0)
       this.fundoFixo = window.scrollY > 0

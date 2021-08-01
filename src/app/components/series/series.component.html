@@ -5,16 +5,16 @@
         </video>
     </div>
     <div class="text-serie">
-        <span>Séries</span>
-        <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()" > 
-            Gêneros
-            <i class="fa fa-caret-down"></i>
-            <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila"  >
-            <ul *ngFor="let grupo of getGrupos()" >
-                <li *ngFor="let i of grupo" >
-                    <a> {{ i }}</a>
-                </li>    
-            </ul>
+            <span>Séries</span>
+            <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()" > 
+                Gêneros
+                <i class="fa fa-caret-down"></i>
+                <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila"  >
+                <ul *ngFor="let grupo of getGrupos()" >
+                    <li *ngFor="let i of grupo" >
+                        <a> {{ i }}</a>
+                    </li>    
+                </ul>
             </div>
         </div>
         <div class="button-series-white">
