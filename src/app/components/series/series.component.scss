@@ -1,9 +1,11 @@
 #tooltip {
     opacity: 0; //esconder o elemento
     visibility: hidden;
+    
     &.show {
         opacity: 1;
         visibility: visible;
+        z-index: 1;
     }
 }
 
@@ -146,17 +148,27 @@ span {
 }
 
 .button-series-white{
+    cursor: pointer;
     background-color: white;
-    width: 100px;
+    width: 161px;
+    height: 50px;
     border-radius: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    // padding-top: 3px;
+    // padding-bottom: 3px;
     padding-right: 3px;
     padding-left: 3px;
+    position: relative !important;
+    top: 34rem !important;
+ 
     a {
      color: black;
      text-decoration: none;
      font-weight: 600;
+     font-size: 24px;
+      
+    position: relative;
+    top: 6px;
+    left: 20px;
     }
 }
 
@@ -170,15 +182,22 @@ span {
 }
 
 .button-series-dark {
+    cursor: pointer;
     background-color: rgba(109, 109, 110, 0.7);
     padding-bottom: 5px;
     padding-top: 5px;
-    width: 180px;
+    width: 286px;
+    height: 52px;
     border-radius: 3px;
-
+    left: 11rem !important;
+    position: relative !important;
+    top: 7.7rem !important;
     a {
     color: white;
     text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    left: 28px;
     }
     a:not(:disabled):hover {
         background-color: rgba(109, 109, 110, 0.4);
@@ -188,4 +207,21 @@ span {
 .fa-info-circle {
     padding-right: 10px !important;
     padding-left: 10px !important;
+}
+
+.text-serie img {
+    opacity: 0.5;
+    position: relative;
+    top: 5rem;
+}
+.text-img {
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 1.4vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    margin-top: .1vw;
+    position: relative;
+    width: 650px;
+    top: 6rem;
 }
