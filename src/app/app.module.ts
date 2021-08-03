@@ -16,6 +16,8 @@ import { NavigationTabComponent } from './components/navigation-tab/navigation-t
 import { ManageComponent } from './components/profiles/manage/manage.component';
 import { ProfileLayoutComponent } from './template/profile-layout/profile-layout.component';
 import { HomeLayoutComponent } from './template/home-layout/home-layout.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { HomeLayoutComponent } from './template/home-layout/home-layout.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    [IvyCarouselModule], 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, NgModule, OnInit, ViewChild } from '@angular/core';
 import { createPopper } from '@popperjs/core';
 import { chunk } from 'lodash';
 
@@ -7,7 +7,10 @@ import { chunk } from 'lodash';
   templateUrl: './series.component.html',
   styleUrls: ['./series.component.scss']
 })
+
+
 export class SeriesComponent implements OnInit, AfterViewInit {
+
 
   categorias = [ 
     'Ação', 

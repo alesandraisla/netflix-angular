@@ -1,16 +1,14 @@
-<div class=" ">
+<div class="container-series">
     <div>
         <img id="imgTrailer" [ngClass]="{hidden: showVideo == true}" src="assets/img/trailer.jpg" alt="trailer">
         <video id="serieVideo" [ngClass]="{hidden: showVideo == false}" #serieVideo style="width: 100%;">
         </video>
     </div>
     <div class="text-serie">
-            <span>Séries</span>
-            <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()" > 
-                Gêneros
-                <i class="fa fa-caret-down"></i>
-                <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila"  >
-                <ul *ngFor="let grupo of getGrupos()" >
+        <span>Séries</span>
+        <div #div id="div" label="gêneros" role="button" class="box" (click)="popperBox()"> Gêneros<i class="fa fa-caret-down"></i>
+            <div #tooltip id="tooltip" [ngClass]="{show: showMe}"  role="tooltip" class="fila">
+                <ul *ngFor="let grupo of getGrupos()">
                     <li *ngFor="let i of grupo" >
                         <a> {{ i }}</a>
                     </li>    
@@ -29,6 +27,50 @@
         <div class="button-series-dark">
             <a href="#"><i class="fa fa-info-circle"></i>Mais informações</a>
         </div>
- 
     </div>
+    <div class="names-list">Minha lista</div>
+    <carousel class="carousel" style="height: 200px" [cellsToShow]="6" [cellsToScroll]="5" [width]="1800" [borderRadius]="1">
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme1">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme2">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme3">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme4">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme5">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme6">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme7">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme8">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme9">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme10">
+                </div>
+                <div class="carousel-cell">
+                    <img class="img-carousel" src="https://via.placeholder.com/341x192/ffffff/B0C4DE/?text=Filme11">
+                </div>
+           
+<!--                
+            <div _ngcontent-wbk-c23="" class="carousel-arrows">
+                <div _ngcontent-wbk-c23="" class="carousel-arrow carousel-arrow-prev">
+                </div>
+                <div _ngcontent-wbk-c23="" class="carousel-arrow carousel-arrow-next">
+                </div>
+            </div> -->
+    </carousel>
+</div>
   
