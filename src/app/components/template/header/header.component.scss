@@ -9,6 +9,8 @@
     &.fundo {
         background-color: #141414;
         background-color: rgb(20, 20, 20);
+        z-index: 1;
+        position: fixed;
     }
 }
 
